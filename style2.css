@@ -1,0 +1,49 @@
+@media screen and (min-width: 401px) and (max-width: 1000px) {
+
+    #nav{
+        height: 9vh;
+    }
+    ul{
+        flex-direction: column;
+        font-size: larger;
+    }
+    li{
+        margin-left: 5vw;
+    }
+    /* Nav end */
+    /* Réalise start */
+    #realise_1 div{
+        width: 30%;
+    }
+    #realise_2 div{
+        width: 30%;
+    }
+    /* Réalise end */
+    /* Competences start */
+    #competences{
+        flex-direction: column;
+        height: 120vh;
+    }
+    #image{
+        width: 100%;
+        height:30%;
+        background-size: cover;
+        opacity: 1;
+    }
+    #competence_right{
+        width: 90%;
+        margin: auto;
+    }
+    #competence_right h2{
+        margin-top: 5vh;
+    }
+    #competence_right p{
+        margin-top: -13vh;
+    }
+    /* Compétences end */
+}
+
+/* FORMAT SMARTPHONE */
+@media screen and (max-width: 400px) {
+    
+}
