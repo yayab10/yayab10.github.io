@@ -1,5 +1,7 @@
 @media screen and (min-width: 401px) and (max-width: 1000px) {
-
+    body{
+        width: 100%;
+    }
     #nav{
         height: 9vh;
     }
@@ -11,6 +13,11 @@
         margin-left: 5vw;
     }
     /* Nav end */
+    /* Present start */
+    #zindex{
+        display: none;
+    }
+    /* Present end */
     /* Réalise start */
     #realise_1 div{
         width: 30%;
@@ -25,9 +32,11 @@
         height: 120vh;
     }
     #image{
-        width: 100%;
+        width: 90%;
+        margin: auto;
         height:30%;
         background-size: cover;
+        background-position: center;
         opacity: 1;
     }
     #competence_right{
@@ -40,10 +49,128 @@
     #competence_right p{
         margin-top: -13vh;
     }
-    /* Compétences end */
 }
+    /* Compétences end */
 
-/* FORMAT SMARTPHONE */
-@media screen and (max-width: 400px) {
-    
+    /* FORMAT SMARTPHONE */
+    @media screen and (max-width: 400px) {
+        body{
+            /* width: 100vw; */
+            font-size: x-small;
+        }
+        #nav{
+            height: 9vh;
+        }
+        ul{
+            flex-direction: column;
+            font-size: larger;
+        }
+        li{
+            margin-left: 5vw;
+        }
+        /* Nav end */
+        #zindex{
+            display: none;
+        }
+        /* Réalise start */
+        #realise{
+            width: 100%;
+            margin: auto;
+        }
+        #realise_1{
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: -2vh;
+        }
+        #realise_2{
+            flex-direction: column;
+        }
+        #realise_1 div{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 3vh;
+        }
+        #realise_2 div{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 3vh;
+        }
+        /* Réalise end */
+        /* Competences start */
+        #competences{
+            flex-direction: column;
+            height: 120vh;
+        }
+        #image{
+            width: 90%;
+            margin: auto;
+            height:30%;
+            background-size: cover;
+            background-position: center;
+            opacity:0.5;
+        }
+        #competence_right{
+            width: 90%;
+            margin: auto;
+        }
+        #competence_right h2{
+            margin-top: 5vh;
+        }
+        #competence_right p{
+            margin-top: -13vh;
+        }
+        /* Footer start */
+        form{
+            width: 100%;
+            margin: auto;
+        }
+        #contacter{
+            text-align: center;
+        }
+    }
+
+/* FORMAT SMARTPHONE ET TABLETTE */
+@media screen and (max-width: 1000px) {
+    #nav{
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+    }
+    #ul{
+        position: fixed;
+        top: -100%;
+        margin-top: 4vh;
+        /* top: 3%; */
+        transition: 0.25s;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        height: 18vh;
+    }
+    li{
+        width: 100%;
+        /* text-align: center; */
+    }
+    #icons{
+        /* cursor: pointer; */
+        display: block;
+        font-size: 3em;
+    }
+    #icons::before{
+        content: "\2630";
+    }
+    .active #ul {
+        top: 0;
+        text-align: center;
+        /* left: 30%; */
+        top: 3%;
+        height: 20vh;
+    }
+    .active #icons:before{
+        content: "\2715";
+    }
+    li:hover{
+        background-color: skyblue;
+    }
 }
